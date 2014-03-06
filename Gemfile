@@ -5,9 +5,12 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Use sqlite3 as the database for Active Record
+# Use PostgreSQL for both development and production
+gem 'pg', '0.15.1'
+
+# RSpec for development
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  # gem 'sqlite3', '1.3.8' - migrated development db from sqlite3 to pg
   gem 'rspec-rails', '2.13.1'
 end
 
@@ -45,7 +48,7 @@ end
 
 # Use Postgres for production db in Heroku deployment
 group :production do
-  gem 'pg', '0.15.1'
+  #gem 'pg', '0.15.1' #MOVED TO TOP OF GEMFILE- using pg for both production and development
   gem 'rails_12factor', '0.0.2'
 end
 
