@@ -20,12 +20,12 @@ group :development, :test do
 end
 
 #Use capybara for simulating user interaction; selenium is a capybara dependency
-# growl is for Guard
+# growl and terminal-notifier-guard are for Guard notificaitions
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
   gem 'growl', '1.0.3'
-  
+  gem 'terminal-notifier-guard', '1.5.3'
 end
 
 # Use SCSS for stylesheets
