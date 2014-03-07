@@ -4,6 +4,8 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
+# bootstrap-sass to convert Bootstrap's LESS To Sass for the asset pipeline
+gem 'bootstrap-sass', '2.3.2.0'
 
 # Use PostgreSQL for both development and production
 gem 'pg', '0.15.1'
