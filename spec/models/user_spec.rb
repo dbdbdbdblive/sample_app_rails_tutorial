@@ -31,6 +31,12 @@ describe User do
     it { should_not be_valid }
   end
   
+  describe "when name is too short" do
+    before { @user.name = "a" }
+    
+    it { should_not be_valid }
+  end
+  
   #email tests
   describe "when email format is not valid" do
     it "should be invalid" do
