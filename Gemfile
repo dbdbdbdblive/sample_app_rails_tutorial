@@ -6,6 +6,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.3'
 # bootstrap-sass to convert Bootstrap's LESS To Sass for the asset pipeline
 gem 'bootstrap-sass', '2.3.2.0'
+# bcrypt for securely hashing passwords
+gem 'bcrypt-ruby', '3.1.2'
 
 # Use PostgreSQL for both development and production
 gem 'pg', '0.15.1'
